@@ -1,0 +1,21 @@
+{
+  "name": "@todo/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "build": "node --check src/server.js && node --check src/app.js && node --check src/config/env.js && node --check src/config/database.js && node --check src/models/todo.model.js && node --check src/services/todo.service.js && node --check src/controllers/todo.controller.js && node --check src/routes/todo.routes.js && node --check src/routes/health.routes.js && node --check src/middleware/error.middleware.js && node --check src/middleware/request-logger.middleware.js && node --check src/utils/async-handler.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

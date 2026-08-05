@@ -1,0 +1,11 @@
+
+> todo-app@0.1.0 dev:api
+> npm run dev --workspace=@todo/api
+
+
+> @todo/api@0.1.0 dev
+> node src/server.js
+
+◇ injected env (3) from .env // tip: ⌘ override existing { override: true }
+MongoDB connected
+Todo API running on http://localhost:4101

@@ -1,0 +1,19 @@
+{
+  "name": "todo-app",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "npm run dev --workspace=@todo/web",
+    "dev:api": "npm run dev --workspace=@todo/api",
+    "build": "npm run build --workspace=@todo/api && npm run build --workspace=@todo/web",
+    "start": "node scripts/start.mjs",
+    "start:web": "npm run start --workspace=@todo/web",
+    "start:api": "npm run start --workspace=@todo/api",
+    "lint": "npm run lint --workspace=@todo/web"
+  }
+}
