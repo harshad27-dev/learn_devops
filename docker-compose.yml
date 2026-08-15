@@ -19,6 +19,9 @@ services:
       dockerfile: apps/api/Dockerfile
     container_name: todo_api
     restart: always
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
     ports:
       - "4100:4100"
     environment:
